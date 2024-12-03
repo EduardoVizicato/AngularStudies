@@ -8,14 +8,20 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class ThirdComponentComponent {
-  image: string = 'image.png'
-  
-  alterimage() {
-    if(this.image == 'image.png'){
-      this.image = 'image2.jpg'
-    }
-    else{
-      this.image = 'image.png'
-    }
-  }
+  // image: string = 'image.png'
+
+  // alterimage() {
+  //   if(this.image == 'image.png'){
+  //     this.image = 'image2.jpg'
+  //   }
+  //   else{
+  //     this.image = 'image.png'
+  //   }
+  // }
+
+  media = 5;
+
+  names: string[] = ["Eduardo", "Yasmim", "Fofão", "Shiraoka"];
+
+  language = 'C#';
 }

@@ -1,2 +1,35 @@
-<button (click)="alterimage()">Alter image</button>
-<img [src]="image" alt="">
+<!-- <button (click)="alterimage()">Alter image</button>
+<img [src]="image" alt=""> -->
+
+@if (media >=7 ) {
+  <p>O aluno foi aprovado</p>
+}
+@else if (media >= 5) {
+  <p>O aluno ficou de recuperação</p>
+}
+@else {
+  <p>O aluno foi reprovado</p>
+}
+
+<hr>
+
+@for(name of names; track $index) {
+  <p>{{$index}} - {{name}}</p>
+}
+
+<hr>
+
+@switch (language) {
+  @case ('HTML') {
+    <p>linguagem de marcação</p>
+  }
+  @case ('CSS') {
+    <p>Linguagem de estilo</p>
+  }
+  @case ('C#') {
+    <p>Linguagem de programação</p>
+  }
+  @default {
+    <p>Linguagem nao encontrada</p>
+  }
+}

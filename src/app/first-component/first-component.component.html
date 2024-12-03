@@ -1,1 +1,9 @@
-<h1>Hello, eu sou o {{name}} e tenho {{age}} anos</h1>
+<!-- <h1>Hello, eu sou o {{name}} e tenho {{age}} anos</h1> -->
+
+<div [ngSwitch]="language">
+  <p *ngSwitchCase="'HTML'">linguagem de marcação</p>
+  <p *ngSwitchCase="'CSS'">linguagem de estilo</p>
+  <p *ngSwitchCase="'C#'">linguagem de programação</p>
+  <p *ngSwitchDefault>linguagem não encontrada</p>
+</div>
+

@@ -1,2 +1,12 @@
-<p>second-component works!</p>
-<button (click)="message()">Click Here</button>
+<!-- <p>second-component works!</p>
+<button (click)="message()">Click Here</button> -->
+<link rel="stylesheet" href="style.scss">
+<h1 [ngStyle]="{'color': condition ? 'green' : 'red'}">Learning ngStyle</h1>
+
+<ul>
+  <li *ngFor="let item of list" [ngStyle]="{'color': item == 'True' ? 'green' : 'red'}">{{item}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let item of list" [ngClass]="item == 'True' ? 'fontColorGreen' : 'fontColorRed' ">{{item}}</li>
+</ul>

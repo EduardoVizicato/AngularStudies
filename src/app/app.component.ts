@@ -4,12 +4,13 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { SecondComponentComponent } from './second-component/second-component.component';
 import { ThirdComponentComponent } from "./third-component/third-component.component";
 import { Component04Component } from "./component04/component04.component";
+import { Component05Component } from "./component05/component05.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ThirdComponentComponent, Component04Component],
+  imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, ThirdComponentComponent, Component04Component, Component05Component],
   templateUrl: './app.component.html',
   styles: [],
 })
